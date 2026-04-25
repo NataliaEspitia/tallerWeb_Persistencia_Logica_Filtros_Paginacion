@@ -32,7 +32,7 @@ import { SponsorEntity } from './sponsor/sponsor.entity';
       host: 'localhost',
       port: 5432,
       username: 'postgres',
-      password: 'postgres',
+      password: 'NuevaPassword123',
       database: 'museum',
       entities: [
         ArtistEntity,
@@ -45,7 +45,6 @@ import { SponsorEntity } from './sponsor/sponsor.entity';
       ],
       dropSchema: true,
       synchronize: true,
-      keepConnectionAlive: true,
     }),
   ],
   controllers: [AppController],
