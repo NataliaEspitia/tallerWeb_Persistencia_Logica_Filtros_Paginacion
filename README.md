@@ -71,3 +71,7 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 ## License
 
 Nest is [MIT licensed](LICENSE).
+
+## postgresql
+
+Porfavor asegúrate de tener postgresql instalado y corriendo en tu máquina. Puedes descargarlo desde [aquí](https://www.postgresql.org/download/). Luego, crea una base de datos llamada `museum` y asegúrate de que el usuario `postgres` tenga acceso a ella con la contraseña `NuevaPassword123`.
