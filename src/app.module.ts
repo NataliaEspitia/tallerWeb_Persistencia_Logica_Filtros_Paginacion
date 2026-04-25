@@ -19,7 +19,14 @@ import { MuseumEntity } from './museum/museum.entity';
 import { SponsorEntity } from './sponsor/sponsor.entity';
 
 @Module({
-  imports: [MuseumModule, ExhibitionModule, ArtworkModule, SponsorModule, ImageModule, ArtistModule, MovementModule,
+  imports: [
+    MuseumModule,
+    ExhibitionModule,
+    ArtworkModule,
+    SponsorModule,
+    ImageModule,
+    ArtistModule,
+    MovementModule,
     TypeOrmModule.forRoot({
       type: 'postgres',
       host: 'localhost',
@@ -27,10 +34,18 @@ import { SponsorEntity } from './sponsor/sponsor.entity';
       username: 'postgres',
       password: 'postgres',
       database: 'museum',
-      entities: [ArtistEntity, ArtworkEntity, ExhibitionEntity, ImageEntity, MovementEntity, MuseumEntity, SponsorEntity],
+      entities: [
+        ArtistEntity,
+        ArtworkEntity,
+        ExhibitionEntity,
+        ImageEntity,
+        MovementEntity,
+        MuseumEntity,
+        SponsorEntity,
+      ],
       dropSchema: true,
       synchronize: true,
-      keepConnectionAlive: true
+      keepConnectionAlive: true,
     }),
   ],
   controllers: [AppController],
