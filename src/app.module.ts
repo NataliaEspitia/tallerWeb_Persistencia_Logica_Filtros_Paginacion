@@ -43,7 +43,7 @@ import { SponsorEntity } from './sponsor/sponsor.entity';
         MuseumEntity,
         SponsorEntity,
       ],
-      dropSchema: true,
+      dropSchema: false,
       synchronize: true,
     }),
   ],
