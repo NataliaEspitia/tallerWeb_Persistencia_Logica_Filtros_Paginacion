@@ -75,3 +75,11 @@ Nest is [MIT licensed](LICENSE).
 ## postgresql
 
 Porfavor asegúrate de tener postgresql instalado y corriendo en tu máquina. Puedes descargarlo desde [aquí](https://www.postgresql.org/download/). Luego, crea una base de datos llamada `museum` y asegúrate de que el usuario `postgres` tenga acceso a ella con la contraseña `NuevaPassword123`.
+
+Pruebas reconmendadas:
+  -http://localhost:3000/api/v1/museums
+  -http://localhost:3000/api/v1/museums?page=1&limit=10&name=oro
+  -http://localhost:3000/api/v1/museums?city=Bogota
+  -http://localhost:3000/api/v1/museums?foundedBefore=1900
+  -http://localhost:3000/api/v1/museums?foundedBefore=1950
+  -http://localhost:3000/api/v1/museums?city=Bogota&name=oro&foundedBefore=1900&page=1&limit=10
